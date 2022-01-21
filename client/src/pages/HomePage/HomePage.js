@@ -3,15 +3,16 @@ import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import ProgressBar from '../../components/Progress/ProgressBar';
 import React, { useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 
 function HomePage() {
 
-    const [progress, setProgress] = useState(0);
-    const [color, setColor] = useState('');
+    // const [progress, setProgress] = useState(0);
+    // const [color, setColor] = useState('');
 
    
     return (
-       <>
+       <div className="home-page">
             <Header />
             <Navbar />
             <ProgressBar 
@@ -25,8 +26,8 @@ function HomePage() {
             <div className="activity">
                 <p className="activity-text">1 ACTIVITY</p>
             </div>
-
-        </>
+            <Footer />
+        </div>
     )
 }
 

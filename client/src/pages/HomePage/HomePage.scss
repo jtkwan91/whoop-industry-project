@@ -34,3 +34,13 @@
 .activity-text {
   color: #50b1df;
 }
+
+.home-page {
+  &__gradient {
+    background: linear-gradient(
+      rgba(69, 83, 99, 1),
+      rgba(38, 46, 55, 1),
+      rgba(27, 32, 39, 1)
+    );
+  }
+}
