@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import BreathingCircle from './components/Header/BreathingCircle/BreathingCircle'
+import BreathingCircle from './pages/BreathingPage/BreathingPage'
 import Header from './components/Header/Header'
 
 export default class App extends Component {
