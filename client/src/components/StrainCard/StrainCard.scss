@@ -2,7 +2,7 @@
 @use "../../styles/typography" as *;
 @use "../../styles/variables" as *;
 
-.breathe-card {
+.strain-card {
     display: flex;
     justify-content: center;
     margin: 2rem;
@@ -10,7 +10,7 @@
     background: linear-gradient(#14161C, #1a1c2300);
     border-radius: .25rem;
 
-    animation: fadeInRight;
+    animation: fadeInLeft;
     animation-duration: 2s;
 
     &__title-container {
