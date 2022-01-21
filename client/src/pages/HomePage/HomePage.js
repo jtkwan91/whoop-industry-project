@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 export default class HomePage extends Component {
     state = {
-        isBreatheCard: true,
+        isBreatheCard: false,
     }
 
     handleClick = () => {
@@ -19,7 +19,7 @@ export default class HomePage extends Component {
     }
 
   render() {
-    let strain = 10.1
+    let strain = 18.2
     return(
         <div>
             <Header />
