@@ -15,6 +15,7 @@ export default function BreatheCard( {title, text}) {
             </div>
             <p className="breathe-card__text">{text}</p>
           </div>
+          <button className="breathe-card__button">Try it</button>
       </div>
     )
 }
