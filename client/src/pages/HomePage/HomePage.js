@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 export default class HomePage extends Component {
     state = {
-        isBreatheCard: true,
+        isBreatheCard: false,
     }
 
     handleClick = () => {
@@ -19,7 +19,7 @@ export default class HomePage extends Component {
     }
 
   render() {
-    let strain = 10.1
+    let strain = 18.2
     return(
         <div>
             <Header />
@@ -49,6 +49,7 @@ export default class HomePage extends Component {
                     title={"Optimal Strain"}
                     text={"You're at a balanced level of Strain for today. Going above 18.9 will promote fitness gains but may diminish your body’s ability to recover fully overnight. "}
                     handleClick={this.handleClick}/>}
+            <Footer />
         </div>
         )
   }

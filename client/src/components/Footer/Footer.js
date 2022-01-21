@@ -8,7 +8,7 @@ import menu from '../../assets/images/menu.svg';
 
 function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer'>     
             <div className="footer__icon-container">
                 <img src={home} className="home"/>
                 <img src={clipboard} className="clipboard"/>
@@ -16,7 +16,8 @@ function Footer() {
                 <img src={connect} className="connect"/>
                 <img src={menu} className="menu"/>
             </div>
-           
+            <div className="home-box"></div>
+           <div className="white-bar"></div>
         </div>
 )
 }
