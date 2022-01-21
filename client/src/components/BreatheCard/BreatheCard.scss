@@ -5,10 +5,23 @@
 .breathe-card {
     display: flex;
     justify-content: center;
-    margin: 2rem;
-    padding: 1rem;
-    background: linear-gradient(#14161C, #1a1c2300);
-    border-radius: .25rem;
+
+    &__main-container {
+        margin: 2rem;
+        padding: .5rem;
+        background: linear-gradient(#14161C, #1a1c2300);
+        border-radius: .25rem;
+        animation: fadeInRight;
+        animation-duration: 2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 21rem;
+    }
+
+    &__content-container {
+        padding-left: .04rem;
+    }
 
     &__title-container {
         display: flex;
@@ -33,5 +46,21 @@
         padding-right: .7rem;
         font-size: .875rem;
         font-weight: lighter;
+    }
+
+    &__button {
+        margin: .5rem;
+        padding: .5rem .3rem;
+        background-color: #1C2027;
+        color: white;
+        border-radius: 1.875rem;
+        text-transform: uppercase;
+        font-size: .625rem;
+        font-weight: 600;
+        width: 5rem;
+    }
+
+    &__action-icon {
+        cursor: pointer;
     }
 }
