@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './BreathingPage.scss'
-import back from '../../assets/images/back.svg'
+import back from '../../assets/images/back.svg';
 
 function BreathingCircle() {
 const [breatheState, setBreatheState] = useState('')
