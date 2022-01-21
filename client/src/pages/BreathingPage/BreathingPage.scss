@@ -74,7 +74,7 @@
     border: 1px solid black;
     border-radius: 4px;
     padding: 1rem;
-    background-color: rgba(64, 78, 92, 1);
+    background: linear-gradient(rgba(60, 72, 86, 0.5), rgba(26, 28, 35, 0.25));
     margin: 3rem 1rem;
 
     &-title {
@@ -86,4 +86,8 @@
       color: rgba(193, 193, 193, 1);
     }
   }
+}
+
+.hide {
+  display: none;
 }

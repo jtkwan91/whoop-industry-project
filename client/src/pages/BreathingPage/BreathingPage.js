@@ -1,15 +1,16 @@
-import {React, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './BreathingPage.scss'
 import back from '../../assets/images/back.svg'
 
 function BreathingCircle() {
-const breatheState = useState('')
+const [breatheState, setBreatheState] = useState('')
+const [show, setHide] = useState("")
 
 const handleClick = (e) => {
 e.preventDefault()
-console.log(breatheState);
-breatheState.setState('breathe__anim')
+setBreatheState('breathe__anim')
+setHide('hide')
 }
 
   return (
@@ -20,13 +21,13 @@ breatheState.setState('breathe__anim')
         <h4 className='breathe__header-title'>BREATHWORK CHALLENGE</h4>
       </div>
       <div className='breathe__challenge'>
-        <div className='breathe__circle breathe__anim' >Breathe Circle</div>
-        <button className='breathe__begin' onClick={handleClick}>Begin</button>
+        <div className={`breathe__circle ${breatheState}`}>Breathe Circle</div>
+        <button className={`breathe__begin ${show}`} onClick={handleClick}>Begin</button>
     </div>
     </div>
       <div className='breathe__instructions'>
-        <h4 className='breathe__instructions-title'>FOLLOW THE VISUALIZER</h4>
-        <p className='breathe__instructions-details'>
+        <h4 className={`breathe__instructions-title`}>FOLLOW THE VISUALIZER</h4>
+        <p className={`breathe__instructions-details`}>
         Inhale slowly in through the nose, drawing the breath down toward the stomach. <br /> <br />
         Tighten the abdominal muscles, letting the stomach fall downward while exhaling through the mouth. 
         </p>
