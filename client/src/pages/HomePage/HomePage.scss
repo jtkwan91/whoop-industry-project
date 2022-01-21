@@ -7,15 +7,21 @@
   font-weight: 600;
   line-height: 17.58px;
 }
-
 .number {
   color: white;
-  position: absolute;
-  top: 271px;
-  left: 98px;
   font-size: 88px;
   font-weight: 500px;
   line-height: 103.13px;
+
+  &-container {
+    width: 125px;
+    position: absolute;
+    top: 271px;
+    left: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .activity {
