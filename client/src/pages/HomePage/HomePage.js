@@ -49,6 +49,7 @@ export default class HomePage extends Component {
                     title={"Optimal Strain"}
                     text={"You're at a balanced level of Strain for today. Going above 18.9 will promote fitness gains but may diminish your body’s ability to recover fully overnight. "}
                     handleClick={this.handleClick}/>}
+            <Footer />
         </div>
         )
   }

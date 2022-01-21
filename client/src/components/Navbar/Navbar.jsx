@@ -7,7 +7,7 @@ export default function Navbar() {
         <NavLink to="/overview"  className="navigation__link">
             <h3 className="navigation__title">overview</h3>
         </NavLink>
-        <NavLink to="/strain" className="navigation__link">
+        <NavLink to="/" className="navigation__link">
             <h3 className="navigation__title">strain</h3>
         </NavLink>
         <NavLink to="/recovery" className="navigation__link">
