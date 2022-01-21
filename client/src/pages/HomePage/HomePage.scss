@@ -1,0 +1,36 @@
+.day-strain {
+  color: white;
+  position: absolute;
+  top: 252px;
+  left: 140px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.58px;
+}
+
+.number {
+  color: white;
+  position: absolute;
+  top: 271px;
+  left: 98px;
+  font-size: 88px;
+  font-weight: 500px;
+  line-height: 103.13px;
+}
+
+.activity {
+  position: absolute;
+  width: 132px;
+  height: 36px;
+  left: 121px;
+  top: 380px;
+  border: 1px solid #50b1df;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-text {
+  color: #50b1df;
+}

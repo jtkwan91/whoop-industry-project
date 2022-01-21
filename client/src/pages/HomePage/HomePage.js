@@ -15,11 +15,17 @@ function HomePage() {
             <Header />
             <Navbar />
             <ProgressBar 
-                progress={60}
-                size={500}
+                progress={75}
+                size={300}
                 strokeWidth={15}
                 circleOneStroke='#d9edfe'
-                circleTwoStroke='#7ea9e1'/>
+                />
+            <h2 className="day-strain">DAY STRAIN</h2>
+            <h1 className="number">16.0</h1>
+            <div className="activity">
+                <p className="activity-text">1 ACTIVITY</p>
+            </div>
+
         </>
     )
 }
