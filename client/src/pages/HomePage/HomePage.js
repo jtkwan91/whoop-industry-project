@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar.jsx';
 import ProgressBar from '../../components/Progress/ProgressBar';
 import BreatheCard from '../../components/BreatheCard/BreatheCard';
 import StrainCard from "../../components/StrainCard/StrainCard";
+import React, { useState } from 'react';
 
 export default class HomePage extends Component {
     state = {
@@ -21,7 +22,17 @@ export default class HomePage extends Component {
         <div>
             <Header />
             <Navbar />
-            <ProgressBar />
+            <ProgressBar 
+                progress={75}
+                size={300}
+                strokeWidth={15}
+                circleOneStroke='#d9edfe'
+                />
+            <h2 className="day-strain">DAY STRAIN</h2>
+            <h1 className="number">16.0</h1>
+            <div className="activity">
+                <p className="activity-text">1 ACTIVITY</p>
+            </div>
             {this.state.isBreatheCard 
                 ? <BreatheCard 
                     title={"Breathwork Challenge"}
@@ -35,3 +46,5 @@ export default class HomePage extends Component {
         )
   }
 };
+
+

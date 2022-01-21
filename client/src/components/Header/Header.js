@@ -19,7 +19,6 @@ function Header() {
                     </div>
                 <img src={headphones} alt="headphones" />
             </div>
-            {/* INSERT NAV BAR HERE */}
         </div>
 )
 }

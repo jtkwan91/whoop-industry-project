@@ -30,9 +30,21 @@ const ProgressBar = props => {
         <>
                         <svg
                 className="svg"
+                transform={`rotate(-90 ${center} ${center})`}
                 width={size}
                 height={size}
+                
             >
+                <defs>
+                    <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#5ed0fc"/>
+                        <stop offset="33.83%" stop-color="#4191c0"/>
+                        <stop offset="50.77%" stop-color="#237cc1"/>
+                        <stop offset="68.54%" stop-color="#1d5b99"/>
+                        <stop offset="100%" stop-color="#142e62"/>
+                    </linearGradient>
+
+                </defs>
                 <circle
                     className="svg-circle-bg"
                     stroke={circleOneStroke}
@@ -44,7 +56,7 @@ const ProgressBar = props => {
                 <circle
                     className="svg-circle"
                     ref={circleRef}
-                    stroke={circleTwoStroke}
+                    stroke="url(#linear)"
                     cx={center}
                     cy={center}
                     r={radius}
@@ -52,12 +64,6 @@ const ProgressBar = props => {
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
                 />
-                <text 
-                    x={`${center}`} 
-                    y={`${center}`} 
-                    className="svg-circle-text">
-                        {progress}%
-                </text>
             </svg>
         </>
     );

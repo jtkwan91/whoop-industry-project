@@ -1,21 +1,93 @@
 @use "../../styles/mixins" as *;
 
 .breathe {
+  background-color: rgba(18, 20, 25, 1);
+  height: 100vh;
+
+  &__gradient {
+    background: linear-gradient(
+      rgba(69, 83, 99, 1),
+      rgba(38, 46, 55, 1),
+      rgba(27, 32, 39, 1)
+    );
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+    &-title {
+      margin-top: 1.75rem;
+      color: white;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    &-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 1rem;
+    }
+  }
+
+  &__challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 28.75rem;
+  }
   &__circle {
     color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 7.875rem;
+    height: 7.875rem;
     border-radius: 50%;
-    background-color: rgba(254, 251, 251, 0.9);
+    margin: 6rem;
+    background-color: rgba(254, 251, 251, 1);
+    box-shadow: 0 0 0 25px rgba(245, 243, 241, 1),
+      0 0 0 50px rgba(228, 228, 228, 1), 0 0 0 70px rgba(193, 193, 193, 1),
+      0 0 0 80px rgba(138, 138, 138, 1);
   }
 
   &__anim {
     animation-name: breathe;
-    animation-duration: 8s;
-    animation-iteration-count: 5;
+    animation-duration: 10s;
+    animation-iteration-count: 6;
   }
+
+  &__begin {
+    border-radius: 1.25rem;
+    border: 2px solid white;
+    background: rgba(28, 32, 39, 1);
+    color: white;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    font-size: 10px;
+    position: absolute;
+    bottom: -1rem;
+  }
+  &__instructions {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    background: linear-gradient(rgba(60, 72, 86, 0.5), rgba(26, 28, 35, 0.25));
+    margin: 3rem 1rem;
+
+    &-title {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    &-details {
+      color: rgba(193, 193, 193, 1);
+    }
+  }
+}
+
+.hide {
+  display: none;
 }
