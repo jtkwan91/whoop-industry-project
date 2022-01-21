@@ -1,6 +1,6 @@
-@use "../../../styles/mixins" as *;
+@use "../../styles/mixins" as *;
 
-.breathe-circle {
+.breathe__circle {
   color: transparent;
   position: absolute;
   top: 50%;
@@ -10,9 +10,11 @@
   height: 6.25rem;
   border-radius: 50%;
   background-color: rgba(254, 251, 251, 0.9);
+}
 
+.breathe__anim {
   animation-name: breathe;
-  animation-duration: 7s;
-  animation-duration: linear;
-  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-direction: linear;
+  animation-iteration-count: 5;
 }
