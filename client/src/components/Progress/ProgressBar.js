@@ -30,6 +30,7 @@ const ProgressBar = props => {
         <>
                         <svg
                 className="svg"
+                transform={`rotate(-90 ${center} ${center})`}
                 width={size}
                 height={size}
             >
@@ -52,12 +53,13 @@ const ProgressBar = props => {
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
                 />
-                <text 
+                {/* <text 
                     x={`${center}`} 
                     y={`${center}`} 
                     className="svg-circle-text">
-                        {progress}%
-                </text>
+                        DAY STRAIN{"\n"}
+                        16.0
+                </text> */}
             </svg>
         </>
     );
