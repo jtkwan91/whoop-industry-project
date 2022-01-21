@@ -8,8 +8,14 @@ import StrainCard from "../../components/StrainCard/StrainCard";
 
 export default class HomePage extends Component {
     state = {
-        isBreatheCard: false,
+        isBreatheCard: true,
     }
+
+    handleClick = () => {
+        const change = !this.state.isBreatheCard
+        this.setState({isBreatheCard: change})
+    }
+
   render() {
     return(
         <div>
@@ -19,10 +25,12 @@ export default class HomePage extends Component {
             {this.state.isBreatheCard 
                 ? <BreatheCard 
                     title={"Breathwork Challenge"}
-                    text={"Often forgotten, but synchronized breathing can help you relax instantly!"}/> 
+                    text={"Often forgotten, but synchronized breathing can help you relax instantly!"}
+                    handleClick={this.handleClick}/> 
                 : <StrainCard
                     title={"Optimal Strain"}
-                    text={"You're at a balanced level of Strain for today. Going above 18.9 will promote fitness gains but may diminish your body’s ability to recover fully overnight. "}/>}
+                    text={"You're at a balanced level of Strain for today. Going above 18.9 will promote fitness gains but may diminish your body’s ability to recover fully overnight. "}
+                    handleClick={this.handleClick}/>}
         </div>
         )
   }
