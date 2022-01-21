@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './BreathingPage.scss'
 import back from '../../assets/images/back.svg';
 
-function BreathingCircle() {
+function BreathingPage() {
 const [breatheState, setBreatheState] = useState('')
 const [show, setHide] = useState("")
 
@@ -37,4 +37,4 @@ setHide('hide')
   )
 }
 
-export default BreathingCircle;
+export default BreathingPage;
