@@ -6,6 +6,7 @@ import ProgressBar from '../../components/Progress/ProgressBar';
 import BreatheCard from '../../components/BreatheCard/BreatheCard';
 import StrainCard from "../../components/StrainCard/StrainCard";
 import React, { useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 
 export default class HomePage extends Component {
     state = {
