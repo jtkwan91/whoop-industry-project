@@ -1,11 +1,15 @@
-import './App.scss';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route />
+          <Route />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
-
-export default App;
