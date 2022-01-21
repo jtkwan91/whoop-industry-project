@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import BreathingCircle from './components/Header/BreathingCircle/BreathingCircle';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 
@@ -10,7 +11,7 @@ export default class App extends Component {
       <Header />
       <Navbar />
         <Switch>
-          <Route />
+          <Route path='/breathe' component={BreathingCircle}/>
           <Route />
         </Switch>
       </BrowserRouter>
