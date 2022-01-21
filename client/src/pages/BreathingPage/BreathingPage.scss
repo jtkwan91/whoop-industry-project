@@ -1,21 +1,74 @@
 @use "../../styles/mixins" as *;
 
 .breathe {
+  padding: 1rem;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+    &-title {
+      color: white;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    &-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 1rem;
+    }
+  }
+
+  &__challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
   &__circle {
     color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 7.875rem;
+    height: 7.875rem;
     border-radius: 50%;
-    background-color: rgba(254, 251, 251, 0.9);
+    margin: 6rem;
+    background-color: rgba(254, 251, 251, 1);
+    box-shadow: 0 0 0 15px rgba(245, 243, 241, 1),
+      0 0 0 30px rgba(228, 228, 228, 1), 0 0 0 45px rgba(193, 193, 193, 1),
+      0 0 0 55px rgb(138, 138, 138);
   }
 
   &__anim {
     animation-name: breathe;
     animation-duration: 8s;
     animation-iteration-count: 5;
+  }
+
+  &__begin {
+    border-radius: 1.25rem;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    padding: 0.5rem;
+    width: 8rem;
+    margin-bottom: 3rem;
+  }
+  &__instructions {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+
+    &-title {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    &-details {
+      color: grey;
+    }
   }
 }

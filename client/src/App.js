@@ -8,8 +8,6 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <Header />
-      <Navbar />
         <Switch>
           <Route path='/breathe' component={BreathingCircle}/>
           <Route />
