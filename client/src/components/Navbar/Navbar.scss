@@ -1,0 +1,21 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: .5rem;
+        padding-bottom: .25rem;
+    }
+}
+
+.active {
+    border-bottom: white .0625rem solid;
+}

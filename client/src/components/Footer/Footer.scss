@@ -1,0 +1,33 @@
+.footer {
+  background-color: #13191f;
+  padding-bottom: 3rem;
+
+  &__icon-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    background-color: #13191f;
+    padding-top: 1rem;
+  }
+}
+
+.home-box {
+  background-color: #13191f;
+  height: 48.25px;
+  width: 53.93px;
+  position: absolute;
+  bottom: 27px;
+  left: 13px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.white-bar {
+  background-color: white;
+  height: 5px;
+  width: 146px;
+  position: absolute;
+  border-radius: 50px;
+  left: 113px;
+  bottom: 5px;
+}

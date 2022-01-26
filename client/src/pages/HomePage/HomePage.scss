@@ -1,0 +1,52 @@
+.day-strain {
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 140px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.58px;
+}
+.number {
+  color: white;
+  font-size: 88px;
+  font-weight: 500px;
+  line-height: 103.13px;
+
+  &-container {
+    width: 125px;
+    position: absolute;
+    top: 240px;
+    left: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.activity {
+  position: absolute;
+  width: 132px;
+  height: 36px;
+  left: 121px;
+  top: 350px;
+  border: 1px solid #50b1df;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-text {
+  color: #50b1df;
+}
+
+.home-page {
+  &__gradient {
+    background: linear-gradient(
+      rgba(69, 83, 99, 1),
+      rgba(38, 46, 55, 1),
+      rgba(27, 32, 39, 1)
+    );
+  }
+}
